@@ -1,0 +1,12 @@
+1)run mysqlfile.sql file in mysql
+2)make .env file
+  content for .env is shown below 
+  fill empty content your own
+
+PORT=50000
+HOST="localhost"
+DBUSER=""
+DATABASEPORT=
+DBPASSWORD=""
+DATABASE="leaveManagement"
+SECRETFORJWT="thisisjwtsecretbyfordbproject"
