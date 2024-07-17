@@ -5,8 +5,6 @@ export const EMAIL_REGEX =
 
 export const PHONE_REGEX = /^[789]\d{9}$/;
 
-export const SYMBOLS_REGEX = /[!@#$%*()"';:,<>|\\\/=\-_^&]/;
-
 export const capitalizeEnum = (label: string) =>
   label
     .split('_')

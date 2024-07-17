@@ -1,5 +1,5 @@
 import { RegisterOptions, ControllerProps } from 'react-hook-form';
-import { EMAIL_REGEX, PHONE_REGEX, SYMBOLS_REGEX } from './StringUtils';
+import { EMAIL_REGEX, PHONE_REGEX } from './StringUtils';
 
 export const EMAIL_VALIDATIONS: Omit<
   RegisterOptions,
@@ -51,9 +51,6 @@ export const PASSWORD_VALIDATIONS: Validation = {
       errors.push('1 digit');
     }
 
-    if (!SYMBOLS_REGEX.test(value)) {
-      errors.push('1 symbol');
-    }
 
     if (errors.length === 0) {
       return undefined;
